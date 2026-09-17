@@ -2,16 +2,26 @@ type TestimonialCardProps = {
   quote: string;
   name: string;
   role: string;
-  focus: string;
+  website: string;
 };
 
-export function TestimonialCard({ quote, name, role, focus }: TestimonialCardProps) {
+function siteHref(website: string) {
+  return website.startsWith("http") ? website : `https://${website}`;
+}
+
+function siteLabel(website: string) {
+  return website.replace(/^https?:\/\//i, "").replace(/\/$/, "");
+}
+
+export function TestimonialCard({ quote, name, role, website }: TestimonialCardProps) {
   const initials = name
     .split(" ")
     .filter(Boolean)
     .slice(0, 2)
     .map((part) => part[0])
     .join("");
+  const href = siteHref(website);
+  const label = siteLabel(website);
 
   return (
     <figure className="testimonial-card">
@@ -25,7 +35,14 @@ export function TestimonialCard({ quote, name, role, focus }: TestimonialCardPro
         <span>
           <strong>{name}</strong>
           <em>{role}</em>
-          <span className="testimonial-focus">{focus}</span>
+          <a
+            className="testimonial-site"
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {label}
+          </a>
         </span>
       </figcaption>
     </figure>

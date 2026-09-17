@@ -1,5 +1,6 @@
 import type { MouseEvent } from "react";
 import { Link } from "react-router-dom";
+import { IconLinkedIn } from "./Icons";
 import { Logo } from "./Logo";
 import { brand, nav, social } from "../data/siteData";
 
@@ -16,7 +17,18 @@ export function Footer() {
         <div className="footer-grid">
           <div>
             <Logo variant="footer" />
-            <p>{brand.tagline} SoftTell designs intelligent systems that connect people, data, software, and workflows.</p>
+            <p>
+              {brand.tagline} SoftTell designs intelligent systems that connect people, data,
+              software, and workflows.
+            </p>
+            <a
+              className="footer-linkedin"
+              href={social.linkedin}
+              aria-label="LinkedIn"
+              onClick={placeholder}
+            >
+              <IconLinkedIn />
+            </a>
           </div>
           <div>
             <h3>Pages</h3>
@@ -40,13 +52,6 @@ export function Footer() {
             <Link to="/#testimonials">Testimonials</Link>
             <Link to="/#pricing">Pricing</Link>
             <Link to="/contact">Contact</Link>
-          </div>
-          <div>
-            <h3>Connect</h3>
-            <a href={social.linkedin} onClick={placeholder}>LinkedIn</a>
-            <a href={social.facebook} onClick={placeholder}>Facebook</a>
-            <a href={social.instagram} onClick={placeholder}>Instagram</a>
-            <a href={social.x} onClick={placeholder}>X</a>
           </div>
         </div>
         <div className="footer-bottom">

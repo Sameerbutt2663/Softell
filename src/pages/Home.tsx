@@ -8,13 +8,14 @@ import { IconArrow } from "../components/Icons";
 import { PageShell, Seo } from "../components/Seo";
 import { PricingCard } from "../components/PricingCard";
 import { SectionHeading } from "../components/SectionHeading";
-import { TestimonialSlider } from "../components/TestimonialSlider";
+import { TestimonialCard } from "../components/TestimonialCard";
 import {
   demoMarks,
   homeServices,
   pricingPlans,
   processSteps,
   seo,
+  testimonials,
   values,
 } from "../data/siteData";
 
@@ -141,15 +142,18 @@ export default function Home() {
           <SectionHeading
             align="center"
             title="What Teams Tell Us"
-            text="Representative voices of the work SoftTell is built to do — web, commerce, software, and AI that feel considered in daily use."
+            text="Teams at DT Supply, SunSync Hardware, and Araaf on the systems SoftTell builds around how they actually work."
           />
-          <FadeIn>
-            <TestimonialSlider />
-          </FadeIn>
+          <Stagger className="testimonial-grid" interval={0.08}>
+            {testimonials.map((item) => (
+              <TestimonialCard key={item.name} {...item} />
+            ))}
+          </Stagger>
         </div>
       </section>
 
       <CTASection
+        tone="white"
         heading="Ready To Build A Smarter Business?"
         text="Let's turn repetitive processes into intelligent systems."
         button="Start A Conversation"

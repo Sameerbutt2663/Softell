@@ -7,6 +7,7 @@ type CTASectionProps = {
   text?: string;
   button: string;
   to?: string;
+  tone?: "cream" | "white";
 };
 
 export function CTASection({
@@ -14,9 +15,10 @@ export function CTASection({
   text,
   button,
   to = "/contact",
+  tone = "cream",
 }: CTASectionProps) {
   return (
-    <section className="section band-cream">
+    <section className={`section ${tone === "white" ? "band-white" : "band-cream"}`}>
       <div className="container">
         <FadeIn>
           <div className="cta-panel">

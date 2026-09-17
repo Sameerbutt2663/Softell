@@ -47,9 +47,6 @@ export const contact = {
 
 export const social = {
   linkedin: "#",
-  facebook: "#",
-  instagram: "#",
-  x: "#",
 };
 
 export const nav = [
@@ -402,44 +399,23 @@ export const testimonials = [
   {
     quote:
       "SoftTell mapped how we actually work before writing a line of software. The result felt like a system built around our team, not a tool we had to squeeze into.",
-    name: "Maya R.",
-    role: "Operations Director",
-    focus: "Custom software",
+    name: "Alex Foster",
+    role: "Purchasing Director",
+    website: "dtsupply.us",
   },
   {
     quote:
       "Our storefront finally matches the brand. Pages load quickly, merchandising is easier, and the admin side no longer fights the customer experience.",
-    name: "Daniel K.",
-    role: "Head of Commerce",
-    focus: "Shopify",
+    name: "Emily Carter",
+    role: "Purchasing Manager",
+    website: "sunsynchardware.com",
   },
   {
     quote:
       "The assistant sits on our own knowledge, so support can answer with context instead of guessing. It is useful on day one, not a demo that fades after launch.",
-    name: "Priya S.",
-    role: "Customer Experience Lead",
-    focus: "Gen AI",
-  },
-  {
-    quote:
-      "The site finally matches how we talk about the work. Pages load quickly, the structure is obvious, and we stopped treating the website as a separate project from the product.",
-    name: "Elena V.",
-    role: "Marketing Lead",
-    focus: "Web development",
-  },
-  {
-    quote:
-      "Field teams used to wait on a desktop handoff. The app puts the same workflows in their pocket — records update once, and the office sees it immediately.",
-    name: "Jonas M.",
+    name: "Hussain Abbas",
     role: "Product Owner",
-    focus: "App development",
-  },
-  {
-    quote:
-      "Reports stopped being a weekly reconstruction. Pipelines land in one place, numbers match, and the team can ask better questions instead of hunting for the source.",
-    name: "Amina T.",
-    role: "Head of Analytics",
-    focus: "Data engineering",
+    website: "araaf.us",
   },
 ] as const;
 
