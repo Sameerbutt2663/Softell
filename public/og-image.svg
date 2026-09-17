@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#073B3B"/>
+  <circle cx="980" cy="120" r="220" fill="#007979" opacity="0.45"/>
+  <circle cx="1080" cy="480" r="180" fill="#24B1B1" opacity="0.28"/>
+  <circle cx="140" cy="520" r="160" fill="#FFE0C5" opacity="0.18"/>
+  <text x="88" y="290" fill="#FFF0E4" font-family="Arial, sans-serif" font-size="92" font-weight="700">SoftTell</text>
+  <text x="88" y="360" fill="#24B1B1" font-family="Arial, sans-serif" font-size="36">Intelligent Technology. Smarter Business.</text>
+</svg>
