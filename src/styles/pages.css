@@ -1308,12 +1308,25 @@ section[id] {
 }
 
 @media (max-width: 860px) {
-  .hero-bg-image,
+  .hero {
+    background:
+      radial-gradient(ellipse at 85% 12%, rgba(36, 177, 177, 0.32), transparent 52%),
+      radial-gradient(ellipse at 8% 88%, rgba(0, 121, 121, 0.4), transparent 46%),
+      var(--dark);
+  }
+
+  .hero-bg-image {
+    display: none;
+  }
+
+  .hero-overlay {
+    display: none;
+  }
+
   .page-hero-bg {
     object-position: 78% center;
   }
 
-  .hero-overlay,
   .page-hero-overlay {
     background: linear-gradient(
       180deg,
